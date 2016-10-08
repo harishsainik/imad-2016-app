@@ -12,6 +12,12 @@ function shiftRight(){
       pos=-1000;
   }
 }
+var count=0;
+var interval;
 img.onclick=function(){
-var interval=setInterval(shiftRight,50);
+count+=1;
+if(count%2===1)
+    interval=setInterval(shiftRight,50);
+else
+    clearInterval(interval);
 };
