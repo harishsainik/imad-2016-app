@@ -45,8 +45,7 @@ var articles={
 					such as input data for a computer program.
 				</p>`
 },
-	'article-three':
-{
+	'article-three':{
 	title:'article -one || Harish saini\'s app',
 	referrer:`<a href="/article-one">First page<a><br>
 		 <a href="/article-two">previous page<a><br>`,
@@ -65,8 +64,7 @@ var articles={
 					while text produced by text editors is generally used for other purposes, 
 					such as input data for a computer program.
 				</p>`
-}
-};
+}};
 function createTemplate(data){
 	var title=data.title;
 	var ref=data.referrer;
@@ -106,6 +104,10 @@ app.get('/', function (req, res) {
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
