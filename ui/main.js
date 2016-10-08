@@ -17,6 +17,7 @@ img.onmouseover=function()
 {
     if(mouseover%5===0)
   alert('click the image to move and stop');  
+  mouseover+=1;
 };
 var count=0;
 var interval;
