@@ -12,8 +12,10 @@ function shiftRight(){
       pos=-1000;
   }
 }
+var mouseover=0;
 img.onmouseover=function()
 {
+    if(mouseover%5===0)
   alert('click the image to move and stop');  
 };
 var count=0;
