@@ -12,6 +12,10 @@ function shiftRight(){
       pos=-1000;
   }
 }
+img.onmousemove=function()
+{
+  alert('click the image to move and stop');  
+};
 var count=0;
 var interval;
 img.onclick=function(){
