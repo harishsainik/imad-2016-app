@@ -5,5 +5,5 @@ element.innerHTML="<h1> Hii there the text has been changed by javascript</h1>";
 var img=document.getElementById('img-id');
 img.onclick=function()
 {
-  img.style.leftMargin="100px";  
+  img.style.marginLeft="100px";  
 };
